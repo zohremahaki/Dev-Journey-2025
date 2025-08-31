@@ -1,4 +1,4 @@
-//تابعی بنویس که دو عدد گرفته و حاصل‌جمع، تفریق، ضرب و تقسیم آن‌ها را برگرداند.
+//تابعی بنویس که دو عدد گرفته و حاصل‌جمع، تفریق، ضرب و تقسیم آن‌ها را برگرداند
 
 let plural;
 let minus;
@@ -54,3 +54,22 @@ const factorial = (n) => {
 };
 
 console.log(factorial(3));
+
+// تابعی بساز که یک رشته بگیرد و تعداد حروف صدادار (a, e, i, o, u) آن را برگرداند.
+
+let count = 0;
+const vowels = (text) => {
+  for (i = 0; i <= text.length; i++) {
+    if (
+      text[i] === "a" ||
+      text[i] === "e" ||
+      text[i] === "i" ||
+      text[i] === "o" ||
+      text[i] === "u"
+    ) {
+      count++;
+    }
+  }
+  return count;
+};
+console.log(vowels("hello world"));
