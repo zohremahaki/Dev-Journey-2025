@@ -47,7 +47,10 @@ console.log(`The max number is ${maxNumber(10, 200, 36)}`);
 
 // یک تابع factorial(n) با Arrow Function بساز (محاسبه فاکتوریل عدد).
 
-// const factorial=(n)=>{
-//   if(n>0){
-//   }
-// }
+const factorial = (n) => {
+  for (let i = 1; i <= n; i++) {
+    return n * (n - i);
+  }
+};
+
+console.log(factorial(3));
