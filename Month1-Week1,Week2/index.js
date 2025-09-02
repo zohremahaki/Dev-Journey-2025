@@ -73,3 +73,76 @@ const vowels = (text) => {
   return count;
 };
 console.log(vowels("hello world"));
+
+// تابعی بساز که یک عدد بگیرد و اگر اول باشد true برگرداند.
+// 2,3,5,....
+const primeNumber = (n) => {
+  for (i = 2; i < n; i++) {
+    if (n % i === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+};
+console.log(primeNumber(6));
+console.log(primeNumber(4));
+console.log(primeNumber(67));
+
+// یک فانکشن بنویس که یک رشته گرفته و آن را برعکس برگرداند. مثلاً "hello" → "olleh".
+
+const reversText = (text) => {
+  let reversText = "";
+  let i = text.toString().length;
+  while (i > 0) {
+    reversText += text[i - 1];
+    i--;
+  }
+  return reversText;
+};
+console.log(reversText("zohre"));
+
+const reversText2 = (text) => {
+  textLength = text.toString().length;
+  // return text.toString().split("").reverse().join("");
+  // return [...text].reverse().join("");
+  return text.split("").reverse().join("");
+};
+console.log(reversText2("hello"));
+
+// فانکشن بساز که یک رشته گرفته و بررسی کند Palindrome هست یا نه (مثل "level").
+const palindrome = (text) => {
+  let reversText = "";
+  let i = text.toString().length;
+  while (i > 0) {
+    reversText += text[i - 1];
+    i--;
+  }
+  if (text === reversText) {
+    console.log("Thi is a palindrome");
+  } else {
+    console.log("Thi isn't a palindrome");
+  }
+};
+palindrome("madam");
+palindrome("racecar");
+palindrome("hello");
+
+// فانکشنی بنویس که n را گرفته و مجموع اعداد ۱ تا n را برگرداند.
+const sum = (n) => {
+  for (i = 0; i < n; i++) {
+    return (n += n - i);
+  }
+};
+console.log(sum(5));
+
+// تابعی بساز که یک عدد بگیرد و در خروجی جدول ضرب آن عدد را (۱ تا ۱۰) چاپ کند
+const mult = (n) => {
+  for (let i = 0; i <= 10; i++) {
+    console.log(`${n} * ${i} = ${n * i}`);
+    
+  }
+};
+mult(5)
+
+
