@@ -140,9 +140,91 @@ console.log(sum(5));
 const mult = (n) => {
   for (let i = 0; i <= 10; i++) {
     console.log(`${n} * ${i} = ${n * i}`);
-    
   }
 };
-mult(5)
+mult(5);
+console.log("***************************************");
+console.log("***************************************");
 
+// یک آرایه اعداد داشته باش؛ با map همه عناصر را دو برابر کن.
+const sampleNumbers = [5, 9, 3, 7, 6, 2];
+const doubleNumbers = sampleNumbers.map((n) => n * 2);
+console.log(sampleNumbers);
+console.log(doubleNumbers);
 
+// آرایه‌ای از اعداد بده؛ با filter فقط اعداد زوج را نگه دار.
+const evenNumber = sampleNumbers.filter((n) => n % 2 === 0);
+console.log(evenNumber);
+
+// آرایه‌ای از اعداد بده؛ با reduce مجموع همه عناصر را محاسبه کن.
+
+const sumWithReduce = sampleNumbers.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0
+);
+console.log(sumWithReduce);
+
+// لیستی از اسامی داشته باش؛ با map همه را به حروف بزرگ تبدیل کن.
+const bodies = ["zohre", "ahmad", "hadi", "saman"];
+const uppercasebodies = bodies.map((b) => b.toUpperCase());
+console.log(bodies);
+console.log(uppercasebodies);
+
+// آرایه‌ای از اشیاء دانش‌آموزان (name, score) بده؛ با filter فقط دانش‌آموزانی که بالای ۷۰ گرفتن را برگردان.
+const students = [
+  { name: "raha", score: 95 },
+  { name: "melani", score: 39 },
+  { name: "sarva", score: 80 },
+  { name: "edward", score: 60 },
+  { name: "mania", score: 73 },
+];
+const briliant = students.filter((s) => s.score >= 70);
+console.log(students);
+console.log(briliant);
+
+// آرایه‌ای از اعداد بده؛ بزرگ‌ترین عدد را با reduce پیدا کن.
+const sampleNumbers2 = [5, 9, 3, 7, 6, 2];
+const maxNumberReduce = sampleNumbers2.reduce((accumulator, currentValue) => {
+  if (accumulator > currentValue) {
+    return accumulator;
+  } else {
+    accumulator = currentValue;
+    return accumulator;
+  }
+}, 0);
+console.log(maxNumberReduce);
+
+// یک شیء مثل {name: "Ali", age: 25} داشته باش؛ با destructuring متغیر name و age را بگیر.
+const users = { Fname: "Ali", age: 25 };
+const { Fname, age } = users;
+console.log(`Name:${Fname}, Age:${age}`);
+
+// یک تابع بنویس که چندین آرایه بگیرد و با استفاده از Spread یک آرایه بزرگ بسازد.
+const bigArray = (arr1, arr2, arr3, arr4) => {
+  return [...arr1, ...arr2, ...arr3, ...arr4];
+};
+console.log(bigArray([1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]));
+
+// یک آرایه از رشته‌ها داشته باش؛ با map تعداد کاراکتر هر رشته را حساب کن.
+const arrtext = [
+  "zohremahaki",
+  "ahmadmoradifard",
+  "samandarabi",
+  "hadimohamadi",
+];
+const arrtextLength = arrtext.map((a) => a.length);
+console.log(arrtext);
+console.log(arrtextLength);
+
+// لیستی از محصولات (name, price) بده؛ با reduce مجموع قیمت‌ها را حساب کن و خروجی بده.
+const product = [
+  { name: "product1", price: 100 },
+  { name: "product2", price: 300 },
+  { name: "product3", price: 100 },
+  { name: "product4", price: 100 },
+  { name: "product5", price: 100 },
+];
+const priceSum = product.reduce((accumulator, currentValue) => {
+  return Number(accumulator) + Number(currentValue.price);
+}, product[0].price);
+console.log(priceSum);
