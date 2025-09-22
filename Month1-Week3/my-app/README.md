@@ -1,4 +1,32 @@
-# Getting Started with Create React App
+# 💳 Profile Cards
+
+یک پروژه تمرینی React با styled-components برای نمایش کارت پروفایل.
+
+## 🚀 Demo
+
+[Vercel Demo](https://my-project.vercel.app)
+
+## 🛠️ نصب و اجرا
+
+```bash
+yarn install
+yarn start
+
+📦 Props در کامپوننت Card
+Prop	Type	Description
+name	string	اسم کاربر
+job	string	عنوان شغلی
+text1	string	متن کوتاه اول
+text2	string	متن کوتاه دوم
+text3	string	متن کوتاه سوم
+src	string	آدرس عکس پروفایل
+alt	string	متن جایگزین برای عکس
+github	string	لینک GitHub کاربر
+linkedin	string	لینک LinkedIn کاربر
+email	string	ایمیل کاربر
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +95,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+```
