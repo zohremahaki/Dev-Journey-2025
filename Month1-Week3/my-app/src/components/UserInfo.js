@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Countainer = styled.div`
-  margin-top: 130px;
+  padding-top: 5rem;
   text-align: center;
   h5 {
     font-size: 25px;
@@ -11,28 +11,28 @@ const Countainer = styled.div`
   }
   h6 {
     font-size: 18px;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
 
     color: #777777;
     font-weight: 500;
   }
   p {
     font-size: 16px;
-    margin: 5px 0;
+    margin: 12px 0;
     color: #777777;
     font-weight: 400;
   }
 `;
-const TestInfo = () => {
+const UserInfo = (props) => {
   return (
     <Countainer>
-      <h5>Zohre Mahaki</h5>
-      <h6>Front-End Developer</h6>
-      <p> Coding with coffee ☕ and creativity</p>
-      <p> Always learning, always growing</p>
-      <p> Turning ideas into reality</p>
+      <h5>{props.name}</h5>
+      <h6>{props.job}</h6>
+      <p> {props.text1}</p>
+      <p> {props.text2}</p>
+      <p> {props.text3}</p>
     </Countainer>
   );
 };
 
-export default TestInfo;
+export default UserInfo;

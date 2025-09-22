@@ -1,19 +1,10 @@
 import "./App.css";
-import BackgroundImg from "./components/BackgroundImg";
-import Card from "./components/Card";
-import Cardinfo from "./components/Cardinfo";
-import ContactInfo from "./components/ContactInfo";
-import TestInfo from "./components/TestInfo";
+import Container from "./components/Container";
+
 function App() {
   return (
     <div className="App">
-      <Card>
-        <Cardinfo>
-          <BackgroundImg />
-          <TestInfo />
-          <ContactInfo/>
-        </Cardinfo>
-      </Card>
+      <Container />
     </div>
   );
 }

@@ -65,7 +65,9 @@ console.log(uniqueArray2(sampleArray));
 // Group By Property
 // تابعی بساز که یک آرایه از اشیاء مثل [{name:"A", age:20}, {name:"B", age:20}, {name:"C", age:25}] بگیرد و آن‌ها را بر اساس مقدار age گروه‌بندی کند.
 // خروجی: {20:[{…},{…}], 25:[{…}]}.
-
+//////////////////////////
+////////////////////////////
+//////////////////////////////////
 let resultObj = [];
 const members = [
   { name: "A", age: 20 },
@@ -90,8 +92,24 @@ for (i = 0; i < uniqages.length; i++) {
 }
 console.log(resultObj);
 
-// Find Missing Number
 // تابعی بنویس که یک آرایه از اعداد پشت‌سرهم مثل [1,2,3,5,6] بگیرد و عدد گمشده را پیدا کند (4).
+
+const sampleArray2 = [1, 2, 3, 5, 6];
+const sampleArray3 = [6, 7, 9, 10];
+const missedNumber = (arr) => {
+  for (i = 0; i < arr.length - 1; i++) {
+    if (arr[i] + 1 === arr[i + 1]) {
+      console.log(arr[i]);
+    } else {
+      console.log(arr[i]);
+
+      console.log(`Missed Number=${arr[i] + 1}`);
+    }
+  }
+};
+
+missedNumber(sampleArray2);
+missedNumber(sampleArray3);
 
 // Anagram Checker
 // تابعی بساز که دو رشته بگیرد و بررسی کند آیا آن‌ها Anagram هستند یا نه یعنی حروفشان یکی است با ترتیب متفاوت، مثل "listen" و "silent".
