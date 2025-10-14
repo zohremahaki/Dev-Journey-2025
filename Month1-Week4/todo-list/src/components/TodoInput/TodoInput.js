@@ -58,15 +58,9 @@ const TodoInput = () => {
 
 export default TodoInput;
 
-{
-  /* <FontAwesomeIcon icon={faSquareCheck} /> */
-}
 
-{
-  /* <FontAwesomeIcon icon={faSquare} /> */
-}
 
 {
   /* <FontAwesomeIcon icon={faCirclePlus} />
-<FontAwesomeIcon icon={faCirclePlus} /> */
+ */
 }
