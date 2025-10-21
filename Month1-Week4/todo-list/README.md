@@ -1,4 +1,82 @@
-# Getting Started with Create React App
+Todo List App 📝
+
+A Todo List application with features:
+
+Add, edit, and delete tasks
+
+Mark tasks as completed
+
+Filter tasks: all / completed / incompleted
+
+Dark Mode / Light Mode 🌙☀️
+
+Quick task search
+
+Data persistence using browser Local Storage
+
+🔹 Preview
+
+
+
+
+(Replace the image links with your project screenshots)
+
+⚡ Features
+
+Built with React + Styled Components
+
+ThemeProvider for Dark / Light Mode
+
+Complete state management in Container
+
+Filtering and search functionality
+
+🚀 Quick Start
+git clone https://github.com/zohremahaki/Dev-Journey-2025.git
+cd Dev-Journey-2025
+npm install
+npm start
+
+
+App runs at http://localhost:3000
+
+🖥️ Deployment
+
+Build for production: npm run build
+
+Deploy on Vercel: Import from GitHub → Build Command: npm run build → Output Directory: build
+
+🎨 Dark / Light Mode
+
+Toggle between Light and Dark Mode using the Moon / Sun icon. All components are styled using ThemeProvider.
+
+📂 Project Structure
+/src
+  /components
+    Container
+    TodoForm
+    TodoInput
+    TodoList
+    TodoFilter
+    TodoMode
+  theme.js
+  App.js
+  AppStyle.styled.js
+
+🔧 Technologies
+
+React 19
+
+Styled Components 6
+
+FontAwesome React
+
+CRA (Create React App)
+
+Deploy with Vercel
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +145,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
