@@ -3,8 +3,7 @@ import styled from "styled-components";
 const StyledDiv = styled.div`
   select {
     padding: 7px  ;
-  border: 1px solid #6c63ff;
-
+    border: 1px solid #6c63ff;
     border-radius: 3px;
     background-color: #6c63ff;
     color: #f7f7f7;
@@ -12,13 +11,14 @@ const StyledDiv = styled.div`
   }
 `;
 
-const TodoFilter = () => {
+const TodoFilter = (props) => {
+
   return (
     <StyledDiv>
-      <select>
+      <select value={props.selectedOption} onChange={props.onChange}>
         <option value="all">All</option>
         <option value="completed">Completed</option>
-        <option value="pending">Pending</option>
+        <option value="incompleted">Incompleted</option>
       </select>
     </StyledDiv>
   );

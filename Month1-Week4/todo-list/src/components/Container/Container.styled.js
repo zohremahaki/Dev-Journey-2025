@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledDiv = styled.div`
   height: 70vh;
+
 `;
 
 export const PlusStyle = styled.div`

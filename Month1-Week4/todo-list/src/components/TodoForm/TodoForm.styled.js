@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.form`
-  width: 50%;
+  width: 40%;
   height: 15rem;
   padding: 2rem 0;
   border-radius: 20px;
   margin: 8rem auto;
-  background: #f7f7f7;
+    background: ${({ theme }) => theme.background};
+  border: 1px solid ${({ theme }) => theme.inputBorder};
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
   position: fixed;
@@ -27,11 +29,13 @@ export const Overlay = styled.div`
 export const InputStyle = styled.input`
   width: 70%;
   padding: 0.4rem;
-  border: 1px solid #6c63ff;
+    border: 1px solid ${({ theme }) => theme.inputBorder};
+
   border-radius: 3px;
+  background: ${({ theme }) => theme.background};
 
   &::placeholder {
-    color: #c3c1e5;
+    color: ${({ theme }) => theme.placeHolderColor};
   }
 `;
 
