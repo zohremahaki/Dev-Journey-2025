@@ -114,16 +114,88 @@ missedNumber(sampleArray3);
 // Anagram Checker
 // تابعی بساز که دو رشته بگیرد و بررسی کند آیا آن‌ها Anagram هستند یا نه یعنی حروفشان یکی است با ترتیب متفاوت، مثل "listen" و "silent".
 
+const anagramChecker = (text1, text2) => {
+  const textToArr1 = text1.split("").sort().join("");
+  const textToArr2 = text2.split("").sort().join("");
+  if (textToArr1 === textToArr2) {
+    console.log("they are anagram");
+  } else {
+    console.log("they aren't anagram");
+  }
+};
+anagramChecker("listean", "silent");
 // Deep Clone
 // تابعی بنویس که یک آبجکت تو در تو بگیرد و یک کپی کامل (deep clone) از آن برگرداند (نه فقط سطحی).
-
+////hard/////
+const obj1 = {
+  username: {
+    firstName: "zohre",
+    lastName: "mahaki",
+  },
+  age: 34,
+  edgucation: {
+    major: {
+      base: "industrial",
+      branch: "global",
+    },
+    level: "bachelor",
+  },
+};
+const deepClone = (obj) => {
+  const objStringify = JSON.stringify(obj);
+  const objParse = JSON.parse(objStringify);
+  console.log(objParse);
+};
+deepClone(obj1);
 // Longest Substring Without Repeating Characters
 // تابعی بنویس که یک رشته بگیرد و طول بلندترین substring بدون حروف تکراری را برگرداند.
 // مثال: "abcabcbb" → 3 زیررشته "abc".
+const testiText = "abcabcbb";
+const substring = (text) => {
+  const arrtext=text.split("")
+  const emptyArr=[]
+  for (i = 0; i < text.length; i++) {
+    if(!emptyArr.includes(arrtext[i])){
+      emptyArr.push(arrtext[i])
+    }else{
+      break
+    }
+  }
+  return emptyArr.join('')
+};
+console.log(substring(testiText));
 
 // Array Intersection
 // تابعی بساز که دو آرایه بگیرد و عناصر مشترک را برگرداند.
 // مثلاً [1,2,3,4] و [2,4,6] → [2,4].
+const arrA = [1, 2, 3, 4];
+const arrB = [2, 4, 6];
+
+const inresection = (a, b) => {
+  const arrC = [];
+  for (i = 0; i < a.length; i++) {
+    if (b.includes(a[i])) {
+      arrC.push(a[i]);
+    }
+    //  else {
+    //   return;
+    // }
+  }
+  return arrC;
+};
+console.log(inresection(arrA, arrB));
 
 // Implement map
 // تابعی به اسم myMap بنویس که دقیقاً مثل متد map عمل کند آرایه و یک callback بگیرد و آرایه جدید برگرداند
+/////hard///////
+
+const myMap = (arr, callback) => {
+  const result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(callback(arr[i], i, arr));
+  }
+  return result;
+};
+const sampleArr = [1, 2, 3, 4, 5];
+const mappedArr = myMap(sampleArr, (item) => item * 2);
+console.log(mappedArr);
