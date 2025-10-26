@@ -5,7 +5,7 @@ const Container = () => {
   const users = [
     {
       id: 1,
-      fullName: "zohre mahaki",
+      fullName: "Zohre Mahaki",
       job: "Front-End Developer",
       text1: "Coding with coffee ☕ and creativity",
       text2: "Always learning, always growing",
@@ -19,7 +19,7 @@ const Container = () => {
     },
     {
       id: 2,
-      fullName: "ali rezaei",
+      fullName: "Ali Rezaei",
       job: "Back-End Developer",
       text1: "Building robust APIs 🖥️",
       text2: "Passionate about databases",
@@ -33,7 +33,7 @@ const Container = () => {
     },
     {
       id: 3,
-      fullName: "sara ahmadi",
+      fullName: "Sara Ahmadi",
       job: "UI/UX Designer",
       text1: "Designing user-friendly interfaces 🎨",
       text2: "Focusing on user experience",
