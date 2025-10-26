@@ -64,6 +64,7 @@ const Container = () => {
       {users.map((user) => {
         return (
           <Card
+          key={user.id}
             name={user.fullName}
             job={user.job}
             text1={user.text1}
@@ -71,7 +72,6 @@ const Container = () => {
             text3={user.text3}
             src={user.src}
             alt={user.alt}
-            key={user.fullName}
             likdin={user.likdin}
             email={user.email}
             url={user.url}
