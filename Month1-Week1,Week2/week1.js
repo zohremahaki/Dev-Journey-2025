@@ -12,6 +12,9 @@ function mathematical(a, b) {
   return operations;
 }
 mathematical(2, 4);
+// map باید آرایه‌ی جدید برگردونه، نه Side-Effect.
+// اگر می‌خوای لاگ کنی:
+// operations.forEach(op => console.log(op));
 
 // تابعی بنویس که عددی بگیرد و تشخیص دهد زوج است یا فرد.
 
