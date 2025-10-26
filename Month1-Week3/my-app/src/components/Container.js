@@ -4,6 +4,7 @@ import Card from "./Card";
 const Container = () => {
   const users = [
     {
+      id: 1,
       fullName: "zohre mahaki",
       job: "Front-End Developer",
       text1: "Coding with coffee ☕ and creativity",
@@ -17,6 +18,7 @@ const Container = () => {
       url: "images/image2.jpg",
     },
     {
+      id: 2,
       fullName: "ali rezaei",
       job: "Back-End Developer",
       text1: "Building robust APIs 🖥️",
@@ -30,6 +32,7 @@ const Container = () => {
       url: "images/image4.jpg",
     },
     {
+      id: 3,
       fullName: "sara ahmadi",
       job: "UI/UX Designer",
       text1: "Designing user-friendly interfaces 🎨",
