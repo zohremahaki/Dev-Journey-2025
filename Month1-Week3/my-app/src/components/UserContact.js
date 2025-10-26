@@ -41,15 +41,16 @@ const UserContact = (props) => {
       <SocialLinks
         href={props.linkdin}
         target="_blank"
+        aria-label="LinkedIn Profile"
       >
         <FaLinkedin size={10} color="#0077B5" /> {props.name}
       </SocialLinks>
 
-      <SocialLinks>
+      <SocialLinks  aria-label="Email Address" href={`mailto:${props.email}`}>
         <SiGmail size={10} color="#D14836" /> {props.email}
       </SocialLinks>
 
-      <SocialLinks href={props.github} target="_blank">
+      <SocialLinks href={props.github} target="_blank" aria-label="GitHub Profile">
         <FaGithub size={10} color="#333" /> {props.name}
       </SocialLinks>
     </Container>
