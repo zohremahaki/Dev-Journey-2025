@@ -4,7 +4,8 @@ function mathematical(a, b) {
   const plural = a + b;
   const minus = a - b;
   const multiplication = a * b;
-  const division = a / b;
+  const division = b !== 0 ? a / b : null;
+  // در تقسیم، اگر b === 0 باشه، خروجی Infinity می‌شه. بهتره کنترلت مشخص باشه:
   const operations = [plural, minus, multiplication, division];
   operations.forEach((operation) => {
     console.log(operation);
