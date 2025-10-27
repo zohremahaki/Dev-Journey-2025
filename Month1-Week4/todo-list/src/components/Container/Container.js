@@ -13,6 +13,10 @@ const Container = (props) => {
     JSON.parse(localStorage.getItem("todos")) || []
   );
 
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
+
   const [selectedOption, setSelectedOption] = useState("all");
 
   // JSON.parse
@@ -91,7 +95,6 @@ const Container = (props) => {
     if (selectedOption === "completed") return todo.completed;
     if (selectedOption === "incompleted") return !todo.completed;
   });
-
 
   return (
     <StyledDiv>
